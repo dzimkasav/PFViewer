@@ -12,5 +12,12 @@
     <vm:MainViewModel />
   </Design.DataContext>
 
-  <TextBlock Text="{Binding Greeting}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+	<DockPanel>
+		<Menu DockPanel.Dock="Top">
+			<MenuItem Header="File">
+				<MenuItem Header="New" Command="{Binding CreateWorkspace}"/>
+			</MenuItem>
+		</Menu>
+		<TextBlock Text="temp" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+	</DockPanel>
 </UserControl>
